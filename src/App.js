@@ -10,6 +10,8 @@ import Contact from './Components/Contact';
 import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
 
+import { RESUME_DATA } from './data/resume-data';
+
 class App extends Component {
 
   constructor(props){
@@ -40,7 +42,8 @@ class App extends Component {
   }
 
   componentDidMount(){
-    this.getResumeData();
+    // this.getResumeData();
+    this.setState({resumeData: RESUME_DATA});
   }
 
   render() {
